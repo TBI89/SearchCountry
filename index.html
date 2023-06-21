@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+
+    <h1>Search Countries</h1>
+    <br>
+
+    <button class="btn btn-outline-success" id="displayAllButton">ALL</button>
+    <br>
+
+    <form class="d-flex" role="search" id="searchForm">
+        <input class="form-control me-2" type="search" placeholder="Search" id="searchInput">
+        <button id="searchButton" class="btn btn-outline-primary">Search</button>
+    </form>
+
+    <hr>
+
+    <div>
+
+        <div id="sumAndAvgCountryPopulation"></div>
+        <br>
+
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-primary">
+                    <th>Country Name</th>
+                    <th>Number Of Citizens</th>
+                </tr>
+            </thead>
+            <tbody id="citizensTable">
+
+            </tbody>
+        </table>
+
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-primary">
+                    <th>Region</th>
+                    <th>Number Of Countries</th>
+                </tr>
+            </thead>
+            <tbody id="regionTable">
+
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
